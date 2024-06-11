@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joyeux anniversaire Marine !</title>
+  <style>
+    body {
+      background-color: #fce6c9;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff6f61;
+      font-size: 5rem;
+      margin-top: 5rem;
+      text-shadow: 2px 2px #fff, -2px -2px #fff;
+    }
+
+    p {
+      color: #c74d3d;
+      font-size: 2rem;
+      margin-bottom: 5rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 3rem;
+        margin-top: 2rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Joyeux anniversaire Marine !</h1>
+  <p>Que cette journée soit remplie de joie, de rires et de moments inoubliables !</p>
+
+    <p>On se retrouve le 18 juin pour le concert de Green Day à l'Accor Arena (clique sur l'image !)</p>
+    
+  <img width="100%" style="cursor: pointer;" src="greenday.webp" id="play-button">
+
+  <audio id="background-music">
+    <source src="greenday.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    const playButton = document.getElementById('play-button');
+    const backgroundMusic = document.getElementById('background-music');
+    backgroundMusic.audio = 0.1;
+    playButton.addEventListener('click', function() {
+      if (backgroundMusic.paused) {
+        backgroundMusic.play();
+      } else {
+        backgroundMusic.pause();
+      }
+    });
+  </script>
+  <p>(en vrai ils sont que 3 dans le groupe mais ChatGPT ne le sait pas)</p>
+
+    <p>From: ton frangin préféré</p>
+</body>
+</html>
