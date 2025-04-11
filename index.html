@@ -1,69 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joyeux anniversaire Marine !</title>
-  <style>
-    body {
-      background-color: #fce6c9;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      text-align: center;
-    }
-
-    h1 {
-      color: #ff6f61;
-      font-size: 5rem;
-      margin-top: 5rem;
-      text-shadow: 2px 2px #fff, -2px -2px #fff;
-    }
-
-    p {
-      color: #c74d3d;
-      font-size: 2rem;
-      margin-bottom: 5rem;
-    }
-
-    @media screen and (max-width: 600px) {
-      h1 {
-        font-size: 3rem;
-        margin-top: 2rem;
-      }
-
-      p {
-        font-size: 1.5rem;
-        margin-bottom: 3rem;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeux Anniversaire Maman !</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffcc66, #ff99cc);
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #ff6666;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .footer {
+            font-size: 1.1em;
+            color: #ff6666;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
-  <h1>Joyeux anniversaire Marine !</h1>
-  <p>Que cette journée soit remplie de joie, de rires et de moments inoubliables !</p>
-
-    <p>On se retrouve le 18 juin pour le concert de Green Day à l'Accor Arena (clique sur l'image !)</p>
-    
-  <img width="100%" style="cursor: pointer;" src="greenday.webp" id="play-button">
-
-  <audio id="background-music">
-    <source src="greenday.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
-  <script>
-    const playButton = document.getElementById('play-button');
-    const backgroundMusic = document.getElementById('background-music');
-    backgroundMusic.audio = 0.1;
-    playButton.addEventListener('click', function() {
-      if (backgroundMusic.paused) {
-        backgroundMusic.play();
-      } else {
-        backgroundMusic.pause();
-      }
-    });
-  </script>
-  <p>(en vrai ils sont que 3 dans le groupe mais ChatGPT ne le sait pas)</p>
-
-    <p>From: ton frangin préféré</p>
+    <div class="container">
+        <h1>Joyeux Anniversaire Maman !</h1>
+        <p>Je te souhaite une magnifique journée d'anniversaire. Nous nous retrouverons le 18 avril à la Seine Musicale pour la comédie musicale Mamma Mia! En version originale of course !</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/o_JnB-3ku7I" frameborder="0"  autoplay=1 allowfullscreen></iframe>
+        </div>
+        <div class="footer">Gros bisous ma Dancing Queen !</div>
+    </div>
 </body>
 </html>
